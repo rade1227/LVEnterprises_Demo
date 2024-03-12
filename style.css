@@ -161,7 +161,7 @@ header p
 /* IMAGE GALLERY */
 
 .image-container {
-    width: 95%;
+    width: 80%;
     margin: 1rem;
     display: flex;
     flex-wrap: nowrap;
@@ -184,7 +184,7 @@ header p
 #im
 {
     height:500px;
-    width:32%;
+    width:28%;
    justify-items: center;
 }
 #im1
