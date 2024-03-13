@@ -15,7 +15,7 @@
     <div class="site_container">
             <header>
                 <nav>
-                    <img class="logo" src="img/LV_logo.png" alt="LV logo">
+                    <img class="logo" src="img/LV_favi.png" alt="LV logo">
                     <div class="menu">
                         <ul>
                             <li><a href="index.html" class="active">Home</a></li>
@@ -119,36 +119,86 @@
                         We value our customers , therefore we work closely together to define the requirements and achieve the best.</p>
                 </div>
             </div>    
+            <div class="row3">
+                <div class="column3">
+                  <p> On Time, <br> Every Time</p>
+                </div>
+                <div class="column3">
+                  <p>Experienced Team Members</p>
+                </div>
+                <div class="column3">
+                  <p>Eco-Friendly</p>
+                </div>
+                <div class="column3">
+                  <p>Trusted and <br> Insured</p>
+                </div>
+              </div>
+
         </div>
-        <div class="serviceList">
+        <div class="recog">
             <h1> RECOGNITION</h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/appr_certificate.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/appr_certificate2.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/crownPlaza.png" />
-              </div>
-              <!-- <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </div> -->
+      <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                    <img src="img/appr_certificate.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/appr_certificate2.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/crownPlaza.png" />
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="img/appr_certificate.png" />
+                </div> -->
+                
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
+                <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <!-- <circle cx="24" cy="24" r="20"></circle> -->
+                </svg>
+                <span></span>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-        
+         </div>       
+            
+             
+
+               <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+
     </div>
     <footer>
         <div class="footer-columns">
@@ -185,19 +235,6 @@
     </footer>
     
     
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "flip",
-          grabCursor: true,
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
 
     <script> 
         ScrollReveal({ 
@@ -215,7 +252,7 @@
            ScrollReveal().reveal('.blog-list', { delay: 600 , origin:'right', interval : 400 });
            ScrollReveal().reveal('.containerCon', { delay: 500 , origin:'top' });
        </script>
-       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       
        
 </body>
 </html>

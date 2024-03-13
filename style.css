@@ -169,7 +169,7 @@ header p
 }
 
 .image {
-    width: 32%;
+    width: 30%;
     height:300px;
     margin-bottom: 2%;
     padding:20px;
@@ -352,9 +352,10 @@ input , select{
 }
 /* FOOTER */
 footer {
+    /* bottom: 10%; */
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 4rem;
+    padding: 1rem;
     text-align: justify;
     cursor: pointer;
 
@@ -439,6 +440,9 @@ footer {
   /* Service timeLine */
 
   section#timeline {
+    /* z-index: 0;
+    overflow: hidden; */
+    background: var(--bg-color);
     width: 80%;
     margin: 20px auto;
     position: relative;
@@ -452,7 +456,7 @@ footer {
     margin: 0 0 0 -1px;
     width: 2px;
     height: 100%;
-    /* background: var(--text-color); */
+    background: var(--text-color);
   }
   section#timeline article {
     width: 100%;
@@ -518,7 +522,7 @@ footer {
     right: -5px;
         width: 10px; 
         height: 10px;
-    -webkit-transform: rotate(-45deg);
+    /* -webkit-transform: rotate(-45deg); */
   }
   section#timeline article div.inner p {
     padding: 15px;
@@ -576,28 +580,92 @@ footer {
     align-items: center;
     justify-content: justify;
     list-style: none;
-    font-size: 20px;
-    line-height: 3em;
+    font-size: 18px;
+    line-height: 2em;
 
 }
 .swiper {
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    margin-top: 40px;
+    /* overflow: visible; */
+    width: 50%;
+    height: 70%;
   }
 
   .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 1000px;
+    height: 600px;
+    object-fit:scale-down;
   }
+  .recog
+  {
+    overflow: hidden;
+    /* z-index: 1100000; */
+    text-align: center;
+    font-size: 36;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .autoplay-progress {
+    position: relative;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    /* width: 50%;
+    height: 50%; */
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+
+  .row3 {
+    margin-top: 40px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+  }
+  
+  .column3 {
+    padding:50px;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+
+  }
+  .row3 p{
+    background-color: #fff;
+    font-size: 32px;
+  }
+
 /* RESPONSIVE */
 
 /* @media only screen and (max-width: 920px) {
@@ -605,6 +673,10 @@ footer {
         width: 100%;
         border-radius: 0;
     }
+    column {
+    flex: 100%;
+    margin-bottom: 10px;
+  }
     .image {
         width: 50%;
     }
