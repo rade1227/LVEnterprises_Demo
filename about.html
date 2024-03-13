@@ -11,36 +11,66 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Serif+JP&family=Oldenburg&family=Playpen+Sans&family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
     <body>
-        <div class="site_container">
-            <header>
-                <nav>
-                    <img class="logo" src="img/LV_favi.png" alt="LV logo">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="index.html" >Home</a></li>
-                            <li><a href="about.html" class="active">About Us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <button class="button1" href="tel:+919535439059"> Call Today</button>
-
-                        </ul>
-                    </div>
-                </nav>
+        <div id="wrap">
+            <nav>
+                <div class="logo">
+                    <img src="img/LV_favi.png" alt="" width="100" height="100">
+                </div>
+                <button type="button" class="btnnavbar" data-action="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item" ><a href="index.html" >Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" data-action="dropdown-toggle" class="active" >About</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about.html" >About Us</a>
+                            <a class="dropdown-item" href="team.html">Our Team</a>
+                            <a class="dropdown-item" href="mission.html" >Mission</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="service.html">Services</a></li>
+                                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                <button class="button1" href="tel:"> Call Today</button>
+                </ul>
+            </nav>
+        </div>
+            <div class="site_container">
+                <header>
                 <h1 class="heading1">
                     About Us
                 </h1>
-                <p class="heading2"> </p>
+                <!-- <p class="heading2"> From garden maintainance to cleanups <br> and repairs, we take pride in our work. <br> For a free Quote, <span class="callnow" style="text-decoration: underline;">Contact us now</span></p> -->
                 
-                <img class="bgpic"src="gallery/bg2.jpeg" alt="">
-            </header>
-        
-
-        <div class="why" >
-            <p style="text-align: justify; padding:20px; float:left ">Welcome to LV Enterprise, your go-to full-service landscaping company. We offer a wide range of services designed to transform your outdoor space into a breathtaking oasis. Our team of experienced professionals are equipped with the latest tools and knowledge to provide unmatched service. We specialize in landscape design, lawn maintenance, irrigation installation and repair, and much more. Experience the LV Enterprise difference and contact us today to schedule your consultation.</p>
-            <p style="text-align: justify; padding:20px; float:right">LV Enterprise is your go-to destination for all your landscape design and execution needs. We pride ourselves on offering an excellent blend of creativity, experience and environmental awareness. Our team is experienced and knowledgeable in serving all types of clients, whether Residential, Commercial or Public. We offer tailor-made solutions, built around your specific landscape needs and desires. From enhancing the value of your property to creating a beautiful space for your family, we’ve got you covered. Contact us to learn more about how we can transform your landscape today!</p>
+                <!-- <img class="bgpic"src="img/bg1.jpeg" alt=""> -->
+            </div>
+        </header>
+        <div class="why1" >
+            <div class="abtrow">
+                <div class="abtcolumn">
+            <p style="text-align: justify; padding:20px; ">LV Enterprise is a premier landscaping service provider, and we specialize in offering design and execution services for commercial and residential landscaping projects. <b style="background: #fff;"> Our team of experts has extensive horticultural knowledge and limitless creativity, and we provide safety and environmental measures that ensure the quality and longevity of our work. We take pride in serving clients from hotels, resorts, hospitals, educational institutions, public parks, MNC's, and private residences. </b>We strive to provide superior customer service, offering a comprehensive range of services to ensure that each project is meticulously executed with the utmost attention to detail.</p>
+                </div>
+                <div class="abtcolumn">
+                    <img src="img/gallery2.jpeg" alt="Image">
+                </div>
+            </div>
+            <div class="abtrow">
+                <div class="abtcolumn">
+                    <img src="img/gallery4.jpeg" alt="Placeholder Image">
+                </div>
+                <div class="abtcolumn">
+            <p style="text-align: justify; padding:20px; ">At LV Enterprise, we understand that landscaping is often the last detail you need to be worried about. That's why our team is dedicated to providing top-notch landscaping services, so you can always enjoy the beauty of your outdoor space without the hassle. <b style="background: #fff;"> We believe that a well-maintained and aesthetically attractive garden adds personality to your site, while enhancing its property value. </b>We offer a range of customizable services tailored to your specific needs and preferences. From enhancing the value of your property to creating a beautiful space for your family, we’ve got you covered. Contact us to learn more about how we can transform your landscape today!</p>
+                </div>
+                
+            </div>
         </div>
-    </div>
+    
         <footer>
             <div class="footer-columns">
                 <div class="footer-column">
@@ -77,6 +107,6 @@
         
         
        
-    
+        <script src="app.js"></script>
     </body>
 </html>

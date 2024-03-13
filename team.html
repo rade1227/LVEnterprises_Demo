@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV Enterprises and Landscaping Service</title>
+    <link rel="shortcut icon" href="img/LV_favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="teamstyle.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Serif+JP&family=Oldenburg&family=Playpen+Sans&family=Protest+Riot&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+
+
+:root{
+  --bg-color:#eaf4e8;
+  --text-color:#2b3c2c;
+  --button-color:#2b3c2c;
+}
+.text-blk {
+  line-height: 25px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.inner-container {
+  max-width: 1320px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+}
+
+.section-head-text {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 18px;
+  margin-left: 0px;
+}
+
+.section-subhead-text {
+  color: rgb(72, 72, 72);
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 670px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 80px;
+  margin-left: 0px;
+}
+
+.card {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  box-shadow: rgba(134, 134, 134, 0.16) 0px 6px 24px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+
+.img-wrapper {
+  width: 175px;
+  height: 175px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  line-height: 27px;
+}
+
+.position {
+  line-height: 26px;
+  color: rgb(0, 166, 127);
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.testimonial {
+  color: rgb(122, 122, 122);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.outer-container {
+  background-color: rgb(250, 250, 250);
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+}
+
+.container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.swiper.team-swiper {
+  max-width: 100%;
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.swiper-pagination.container-block {
+  position: relative;
+  top: 0px;
+  margin-top: 36px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+/* .swiper-container-horizontal &gt; */
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-top: 0px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+  height: 12px;
+  width: 12px;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  /* background-repeat-x: initial;
+  background-repeat-y: initial; */
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(0, 166, 127);
+}
+
+.swiper-wrapper {
+  position: relative;
+  top: 0px;
+}
+
+@media (max-width: 1024px) {
+  .swiper-slide {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .outer-container {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+}
+</style>
+
+</head>
+<body>
+  <div id="wrap">
+    <nav>
+        <div class="logo">
+            <img src="img/LV_favi.png" alt="" width="100" height="100">
+        </div>
+        <button type="button" class="btnnavbar" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-item" ><a href="index.html">Home</a></li>
+            
+            <li class="nav-item dropdown">
+                <a href="#" data-action="dropdown-toggle" class="active">About</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="team.html">Our Team</a>
+                    <a class="dropdown-item" href="mission.html" >Mission</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="service.html">Services</a></li>
+                        <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        <button class="button1" href="tel:"> Call Today</button>
+        </ul>
+    </nav>
+</div>
+    <div class="site_container">
+        <header>
+        <h1 class="heading1">
+          Meet Our Team
+        </h1>
+        <!-- <p class="heading2"> From garden maintainance to cleanups <br> and repairs, we take pride in our work. <br> For a free Quote, <span class="callnow" style="text-decoration: underline;">Contact us now</span></p> -->
+        
+        <img class="bgpic"src="img/bg1.jpeg" alt="">
+    </div>
+</header>
+        <!-- HOME PAGE END -->
+        
+        <div class="responsive-container-block outer-container" style="background: var(--bg-color);" >
+          <div class="responsive-container-block inner-container">
+            <p class="text-blk section-head-text" style="background: var(--bg-color); " >
+              Meet Our Expert Landscaping Team
+            </p>
+            <p class="text-blk section-subhead-text" style="background: var(--bg-color);">
+              Our team at LV Enterprise is dedicated to bringing your outdoor vision to life. With a wealth of expertise and attention to detail, we make sure each project is executed to perfection. Meet our team of skilled professionals and see why we're the top choice for landscaping services.
+            </p>
+            <div class="responsive-container-block" >
+              <div class="swiper team-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img-wrapper" style="background: var(--bg-color);">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png">
+                      </div>
+                      <div class="card-content" style="background: #ffffff;">
+                        <p class="text-blk name" style="background: #ffffff;">
+                          Lakshmi V
+                        </p>
+                        <p class="text-blk position">
+                          Proprietor
+                        </p>
+                        <p class="text-blk testimonial">
+                          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw42.png">
+                      </div>
+                      <div class="card-content" style="background: #ffffff;">
+                        <p class="text-blk name" style="background: #ffffff;">
+                          Vishwanath K C
+                        </p>
+                        <p class="text-blk position">
+                         Operational Manager
+                        </p>
+                        <p class="text-blk testimonial">
+                          Overall 30 years of Experience and 20 years in GCC
+                          Expertised in Soft Landscaping and Irrigation Gardners, Landscaping Engineer, Horiculturist, Agronomist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw40.png">
+                      </div>
+                      <div class="card-content" style="background: #ffffff;">
+                        <p class="text-blk name" style="background: #ffffff;">
+                          Rajendran
+                        </p>
+                        <p class="text-blk position">
+                          HR and Accounts
+                        </p>
+                        <p class="text-blk testimonial">
+                          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw41.png">
+                      </div>
+                      <div class="card-content" style="background: #ffffff;">
+                        <p class="text-blk name" style="background: #ffffff;">
+                         Arun Sulpi
+                        </p>
+                        <p class="text-blk position">
+                          General Manager
+                        </p>
+                        <p class="text-blk testimonial">
+                          Overall 30 years of Experience in Bangalore
+                          Expertised in Hardscaping and Soft Landscaping
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw42.png">
+                      </div>
+                      <div class="card-content" style="background: #ffffff;">
+                        <p class="text-blk name" style="background: #ffffff;">
+                          Chandru
+                        </p>
+                        <p class="text-blk position">
+                          Auditor
+                        </p>
+                        <p class="text-blk testimonial">
+                          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next" style="background: #ffffff; color:var(--button-color)"></div>
+                <div class="swiper-button-prev" style="background: #ffffff; color: var(--button-color);"></div>
+                <div class="swiper-pagination container-block" style="color: var(--button-color);">
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+    <!-- FOOTER-->
+        <footer>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h1>Get In Touch  <br> with
+                        <br> LV Enterprises and <br>
+                    Landscaping Service</h1>
+                </div>
+                <div class="footer-column">
+                    <h3 style="text-decoration: underline;">Location</h3><br>
+                    <p>833/1. 5TH Main 5th Cross,<br> M.C. Layout Vijayanagar,<br>
+                        Bangalore – 560040,<br>
+                        Karnataka State. </p>
+                </div>
+                <div class="footer-column">
+                    <h3 style="text-decoration: underline;">Phone</h3><br>
+                    <p>  <a href="tel:+919535439059">+919535439059 <br></a>
+                        <a href="tel:+919535439059">+919538699059</a></p><br>
+    
+                    <h3 style="text-decoration: underline;"  >Email</h3><br>
+                    <p> <a href="mailto:lakshmiv@lvlandscaping.in"> lakshmiv@lvlandscaping.in </a> </p>
+                </div>
+                <div class="footer-column">
+                    <h3 style="text-decoration: underline;">Social media</h3><br>
+                    <a href="www.facebook.com"><i class="fa-brands fa-facebook" style="color: #70a5ff;"></a></i><br>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> <br>
+                        <i class="fa-brands fa-whatsapp" style="color: #44a260;"></i>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="cpy">
+            <copyright class="cpy"> &copy 2024 LV Enterprises and Landscaping Services. All Right Reserved</copyright>
+        </div>
+        </footer>
+
+        <script>
+     var swiper = new Swiper(".team-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    loop:true,
+  },
+  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+  // breakpoints: {
+
+  //   200: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20
+  //   },
+  //   750: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 30
+  //   },
+  //   1024: {
+  //     slidesPerView: 2.5,
+  //     spaceBetween: 30
+  //   },
+  //   1100: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  }
+});
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

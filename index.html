@@ -12,7 +12,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Serif+JP&family=Oldenburg&family=Playpen+Sans&family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="site_container">
+    <div id="wrap">
+        <nav>
+            <div class="logo">
+                <img src="img/LV_favi.png" alt="" width="100" height="100">
+            </div>
+            <button type="button" class="btnnavbar" data-action="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item" ><a href="index.html" class="active" >Home</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a href="#" data-action="dropdown-toggle" >About</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <a class="dropdown-item" href="team.html">Our Team</a>
+                        <a class="dropdown-item" href="mission.html" >Mission</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="service.html">Services</a></li>
+                            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a href="contact.html">Contact</a></li>
+                            <button class="button1" href="tel:"> Call Today</button>
+            </ul>
+        </nav>
+    </div>
+        <div class="site_container">
+            <header>
+            <h1 class="heading1">
+                LV Enterprises<br> and Landscaping <br>Services
+            </h1>
+            <p class="heading2"> From garden maintainance to cleanups <br> and repairs, we take pride in our work. <br> For a free Quote, <span class="callnow" style="text-decoration: underline;">Contact us now</span></p>
+            
+            <img class="bgpic"src="img/bg1.jpeg" alt="">
+        </div>
+    </header>
+
+    <!-- <div class="site_container">
             <header>
                 <nav>
                     <img class="logo" src="img/LV_favi.png" alt="LV logo">
@@ -33,7 +74,7 @@
                 <p class="heading2"> From garden maintainance to cleanups <br> and repairs, we take pride in our work. <br> For a free Quote, <span class="callnow" style="text-decoration: underline;">Contact us now</span></p>
                 
                 <img class="bgpic"src="img/bg1.jpeg" alt="">
-            </header>
+            </header> -->
         <!-- HOME PAGE END -->
 
             <!-- CONTACT FORM -->
@@ -116,7 +157,7 @@
                 </div>
                 <div class="column1">
                     <p>
-                        We value our customers , therefore we work closely together to define the requirements and achieve the best.</p>
+                        We value our customers, therefore <br> we work closely together to define <br> the requirements and achieve the best.</p>
                 </div>
             </div>    
             <div class="row3">
@@ -136,7 +177,7 @@
 
         </div>
         <div class="recog">
-            <h1> RECOGNITION</h1>
+            <h1> RECOGNITION</h1></div>
       <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -164,9 +205,9 @@
                 <span></span>
                 </div>
             </div>
-         </div>       
+              
             
-             
+     </div>       
 
                <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -199,7 +240,7 @@
     });
   </script>
 
-    </div>
+    
     <footer>
         <div class="footer-columns">
             <div class="footer-column">
@@ -223,7 +264,10 @@
             </div>
             <div class="footer-column">
                 <h3 style="text-decoration: underline;">Social media</h3><br>
-                <p> </p>
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook" style="color: #70a5ff;"></a></i><br>
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> <br>
+                    <i class="fa-brands fa-whatsapp" style="color: #44a260;"></i>
+                </p>
             </div>
         </div>
         <br>
@@ -252,7 +296,7 @@
            ScrollReveal().reveal('.blog-list', { delay: 600 , origin:'right', interval : 400 });
            ScrollReveal().reveal('.containerCon', { delay: 500 , origin:'top' });
        </script>
-       
+       <script src="app.js"></script>
        
 </body>
 </html>
