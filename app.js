@@ -19,4 +19,18 @@ navToggle.addEventListener('click', () => {
 	} else {
 		nav.classList.add('opened');
 	}
-})
+});
+
+
+$(document).ready(function() {
+
+	$(`[unique-script-id="w-w-dm-id"] .btn-box`).click(function() {
+	  $(this).parent().children(".overlay").show();
+  
+	});
+  
+  
+	$(`[unique-script-id="w-w-dm-id"] .closegal`).click(function() {
+	  $(`[unique-script-id="w-w-dm-id"] .overlay`).hide();
+	});
+  });
