@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Serif+JP&family=Oldenburg&family=Playpen+Sans&family=Protest+Riot&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/417c74e92d.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -32,7 +34,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="about.html">About Us</a>
                         <a class="dropdown-item" href="team.html">Our Team</a>
-                        <a class="dropdown-item" href="mission.html" >Mission</a>
+                        <!-- <a class="dropdown-item" href="mission.html" >Mission</a> -->
                     </div>
                 </li>
                 <li class="nav-item"><a href="service.html">Services</a></li>
@@ -153,13 +155,14 @@
         <div class="why">
             <div class="row1">
                 <div class="column1">
-                    <h1>Why Choose Us </h1>
+                    <h1 style="background: #fff;">Why Choose Us </h1>
                 </div>
                 <div class="column1">
                     <p>
                         We value our customers, therefore <br> we work closely together to define <br> the requirements and achieve the best.</p>
                 </div>
             </div>    
+            <hr style="background: var(--text-color);">
             <div class="row3">
                 <div class="column3">
                   <p> On Time, <br> Every Time</p>
@@ -293,7 +296,7 @@
       <p class="footer-company-about" style="background: var(--text-color);">
         <span style="background: var(--text-color);">About the company</span>
         We are qualified landscape service provider.
-        We take pride in providing you with exceptional quality of work ,customer service
+        We take pride in providing you with exceptional quality of work, customer service
         and standards in safety. Environmental awareness such as water saving, minimizing
         pollution and recycling is natural part of our daily activities.
         Because We Care 
@@ -322,21 +325,22 @@
 
     <script> 
         ScrollReveal({ 
-        //    reset: true,
+            //    reset: true,
            distance:'60px',
            duration: 2500,
            delay: 400, 
            });
        
-           ScrollReveal().reveal('.heading1,.t1,.t2,.t3,.t4,.t5,.anim1', { delay: 500 , origin:'left' });
-           ScrollReveal().reveal('', { delay: 600 , origin:'right' });
-           ScrollReveal().reveal('.whyimage', { delay: 600 , origin:'bottom' });
-           ScrollReveal().reveal('.text-box', { delay: 700 , origin:'right' });
+           ScrollReveal().reveal('.heading1', { delay: 500 , origin:'left' });
+           ScrollReveal().reveal('.heading2', { delay: 600 , origin:'right' });
+           ScrollReveal().reveal('.why', { delay: 600 , origin:'bottom' });
+           ScrollReveal().reveal('.footer-icons', { delay: 700 , origin:'right' });
            ScrollReveal().reveal('.why', { delay: 600 , origin:'left', interval : 400 });
            ScrollReveal().reveal('.blog-list', { delay: 600 , origin:'right', interval : 400 });
            ScrollReveal().reveal('.containerCon', { delay: 500 , origin:'top' });
        </script>
        <script src="app.js"></script>
+     
        
 </body>
 </html>
