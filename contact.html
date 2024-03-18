@@ -39,7 +39,7 @@
                     <li class="nav-item"><a href="service.html">Services</a></li>
                                 <li class="nav-item"><a href="gallery.html">Gallery</a></li>
                                 <li class="nav-item"><a href="contact.html"class="active" >Contact</a></li>
-                                <button class="button1" href="tel:"> Call Today</button>
+                                <button class="button1" href="tel:+919535439059"> Call Today</button>
                 </ul>
             </nav>
         </div>
@@ -61,36 +61,36 @@
                         </div>
                     <div class="contact-right">
                         <h3> Send your Message</h3>
-                        <form action="">
+                        <form onsubmit="sendEmail();reset(); return false">
     
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="firstName">First Name</label>
-                                    <input style="background: #fff;"type="text" placeholder="First Name" required>
+                                    <input id="FirstName" style="background: #fff;"type="text" placeholder="First Name" required>
                                 </div>
                                 <div class="input-group">
-                                    <label for="firstName">Last Name</label>
-                                    <input type="text" placeholder="Last Name" required>
+                                    <label for="LastName">Last Name</label>
+                                    <input id="LastName" type="text" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div  class="input-group">
-                                    <label for="firstName">City</label>
-                                    <input type="text" placeholder="City" required>
+                                    <label for="City">City</label>
+                                    <input id="City" type="text" placeholder="City" required>
                                 </div>
                                 <div class="input-group">
-                                    <label for="firstName">Email</label>
-                                    <input type="email" placeholder="Email" required>
+                                    <label for="Email">Email</label>
+                                    <input id="Email" type="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div class="input-group">
-                                    <label for="firstName">Phone</label>
-                                    <input type="phone" placeholder="Phone" required>
+                                    <label for="Phone">Phone</label>
+                                    <input id="Phone" type="phone" placeholder="Phone" required>
                                 </div>
                                 <div class="input-group">
-                                    <label for="firstName" >Services</label>
-                                    <select>
+                                    <label for="Services" >Services</label>
+                                    <select id="Services">
                                         <!-- <option value="none">Select one</option> -->
                                         <option value="none">Outdoor</option>
                                         <option value="none">Indoor</option>
@@ -99,7 +99,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <button class="formbtn" type="submit"> Submit</button>
+                            <button class="formbtn" id="formbtn" type="submit"> Submit</button>
                         </form>
                     </div>
                 </div>
@@ -184,5 +184,34 @@
         
        
         <script src="app.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            var formbtn = document.getElementById('formbtn')
+            formbtn.addEventListener('click',function(e){
+                e.preventDefault();
+                var fname = document.getElementById('FirstName').value;
+                var lname = document.getElementById('LastName').value;
+                var phone = document.getElementById('Phone').value;
+                var city = document.getElementById('City').value;
+                var email = document.getElementById('Email').value;
+                var service = document.getElementById('Service').value;
+                console.log('hi');
+                var body= 'Firstname: '+fname + '<br/>Lastname: '+lname + '<br/>Phone: '+phone + '<br/>Email: '+email + '<br/>City: '+city + '<br/>Service: '+service;
+            
+             
+            
+                Email.send({
+                Host : "smtp.gmail.com",
+                Username : "test@gmail.com",
+                Password : "password",
+                To : 'test@gmail.com',
+                From : document.getElementByID('Email').value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+                        );
+        });
+        </script>
     </body>
 </html>

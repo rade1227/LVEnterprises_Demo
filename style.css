@@ -27,7 +27,7 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
-	height: 73px;
+	height: 80px;
 	padding: 20px 0;
 	background-color: var(--bg-color);
     text-align: center;
@@ -183,7 +183,7 @@ nav.opened .btnnavbar span:nth-child(3) {
 	nav .btnnavbar {
 		display: block;
     background: none;
-    float: right;
+    float:right;
     /* padding: 2px 0; */
     border: none;
 	}
@@ -363,11 +363,12 @@ header p
     background-color: #fff;
     font-size: large;
     color:var(--text-color);
-    height: 50vh;
+    height: 60vh;
     text-align: justify;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    margin-bottom:10px;
 
 .row1 {
     overflow: hidden;
@@ -406,6 +407,7 @@ header p
     font-size: 20px;
     /* margin-bottom: 10px; */
 }
+
 
 
 }
@@ -457,7 +459,7 @@ header p
 }
 .input-row .input-group
 {
-    flex-basis: 45%;
+    flex-basis: 35%;
 }
 input , select{
     background: #fff;
@@ -1114,6 +1116,11 @@ footer {
       text-align: center;
       align-items: center;
     }
+    .gallery{
+      padding: 0;
+  
+      /* justify-content: center; */
+    }
   }
 
   /* SERVICE LIST NEW */
@@ -1158,11 +1165,12 @@ footer {
   
   .timeline {
     position: relative;
-    padding: 20px;
+
     width: 100%;
     margin-top: 20px;
     /* margin-bottom: 20px; */
     list-style-type: none;
+
   }
   
   .timeline:before {
@@ -1312,11 +1320,12 @@ footer {
     z-index: 15;
   }
   
-  @media(min-width: 768px){
+  @media(min-width: 940px){
     .timeline {
       width: 660px;
       margin: 0 auto;
       margin-top: 20px;
+      padding: 0;
     }
   
     .timeline li:after {
@@ -1505,10 +1514,10 @@ footer {
     .column1 {
         flex: 100%; 
     }
-    .logo
+    /* .logo
     {
       height: 50px;
-    }
+    } */
     
     .grid-wrapper {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
@@ -1516,8 +1525,8 @@ footer {
       }
       .contact-box{
         flex-wrap: wrap;
-        width: 100%;
-        padding: 5px;
+        max-width: 100%;
+        /* padding: 5px; */
         margin: 0;
         align-items: center;
         justify-content: center;
@@ -1546,6 +1555,28 @@ footer {
         justify-content: space-between;
         width: 90%;
       }
+    
+    .why1
+    {
+    height: 200vh;
+    flex-wrap: wrap;
+  }
+  .abtcolumn p
+  {
+    font-size: 15px;
+    padding:10px;
+    line-height: 1.5em;
+    width: 100%;
+    margin: auto;
+  }
+  .abtcolumn img{
+    width: 100%;
+    padding: 5px;
+  }
+
+  .abtrow{
+    flex-wrap: wrap;
+  }
 }
 
 /* FOOTER */
@@ -1723,7 +1754,7 @@ section {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 940px) {
 
   .footer-distributed{
     font: bold 14px sans-serif;
@@ -1744,6 +1775,9 @@ section {
   .footer-distributed .footer-center i{
     margin-left: 0;
   }
+  .footer-left img{
+   width:70px;
+  };
 
 }
 
