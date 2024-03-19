@@ -87,46 +87,56 @@
                 </div>
                 <div class="contact-right">
                     <h3> Send your Message</h3>
-                    <form action="">
+                    <form action="https://formsubmit.co/deepalctesting@gmail.com" method="POST">
+                                
+                        <!-- HONEY POT-->
+                        <input type="text" name="_honey" style="display: none;">
 
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="firstName">First Name</label>
-                                <input style="background: #fff;"type="text" placeholder="First Name" required>
-                            </div>
-                            <div class="input-group">
-                                <label for="firstName">Last Name</label>
-                                <input type="text" placeholder="Last Name" required>
-                            </div>
+                        <!-- DISABLE CAPTCHA-->
+                       <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                       <!-- THANK YOU PAGE-->
+                       <input type="hidden" name="_next" value="https://rade1227.github.io/LVEnterprises_Demo/success.html">
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input id="FirstName" name="First&nbsp;Name" style="background: #fff;"type="text" placeholder="First Name" required>
                         </div>
-                        <div class="input-row">
-                            <div  class="input-group">
-                                <label for="firstName">City</label>
-                                <input type="text" placeholder="City" required>
-                            </div>
-                            <div class="input-group">
-                                <label for="firstName">Email</label>
-                                <input type="email" placeholder="Email" required>
-                            </div>
+                        <div class="input-group">
+                            <label for="LastName">Last Name</label>
+                            <input id="LastName" name="Last&nbsp;Name" type="text" placeholder="Last Name" required>
                         </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="firstName">Phone</label>
-                                <input type="number" placeholder="Phone" required>
-                            </div>
-                            <div class="input-group">
-                                <label for="firstName" >Services</label>
-                                <select>
-                                    <!-- <option value="none">Select one</option> -->
-                                    <option value="none">Outdoor</option>
-                                    <option value="none">Indoor</option>
-                                    <option value="none">Maintainance</option>
-                                    <option value="none">Bakery</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="input-row">
+                        <div  class="input-group">
+                            <label for="City">City</label>
+                            <input id="City" type="text" name="City" placeholder="City" required>
                         </div>
-                        <button class="formbtn" type="submit"> Submit</button>
-                    </form>
+                        <div class="input-group">
+                            <label for="Email">Email</label>
+                            <input id="Email" type="email" name="Email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="Phone">Phone</label>
+                            <input id="Phone" type="phone" name="Phone"placeholder="Phone" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Services" >Services</label>
+                            <select id="Services" name="Services">
+                                <!-- <option value="none">Select one</option> -->
+                                <option value="outdoor">Outdoor</option>
+                                <option value="indoor">Indoor</option>
+                                <option value="maintainance">Maintainance</option>
+                                <option value="bakery">Bakery</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="formbtn" name="formbtn" id="formbtn" type="submit"> Submit</button>
+                    
+                </form>
                 </div>
             </div>
 
@@ -180,7 +190,21 @@
 
         </div>
         <div>
-            <img class="bgpic" src="gallery/landscaping_1.jpg" alt="">
+            <div class="galcontainer1">
+                <article class="gallery">
+                    <img src="gallery/g0.jpg" alt="" />
+                    <img src="gallery/g1.jpg" alt="" />
+                    <img src="gallery/g3.jpg" alt="" />
+                    <img src="gallery/g4.jpg" alt="" />
+                    <img src="gallery/g5.jpg" alt="" />
+                    <img src="gallery/g6.jpg" alt="" />
+                    <img src="gallery/g7.jpeg" alt="" />
+                    <img src="gallery/g8.jpg" alt="" />
+                    <img src="gallery/g9.jpg" alt="" />
+                    <img src="gallery/g10.jpg" alt="" />
+                  </article>
+            </div>
+            <!-- <img class="bgpic" src="gallery/landscaping_1.jpg" alt=""> -->
         </div>
         <!-- <div class="recog">
             <h1> RECOGNITION</h1></div>
