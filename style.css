@@ -190,6 +190,14 @@ nav.opened .btnnavbar span:nth-child(3) {
   nav{
     padding: 0;
   };
+  .footimg
+  {
+    width:70px;
+  }
+}
+.footimg
+{
+  width: 100px;
 }
 /* nav ul{
    float: right;
@@ -316,7 +324,7 @@ header p
 }
 
 /* IMAGE GALLERY */
-.gallery{
+.galleryhome{
   padding:5px;
   margin: 0 auto;
   width:100%;
@@ -591,17 +599,33 @@ footer {
     font-weight: 100;
 }
 
-.galcontainer {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    min-height: 100vh;
+.galcontainer1 {
+ /* --line-offset: calc((10vh + 8px) / 2);  */
+    width: 100%;
+    margin: 0 ;
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    min-height: 70vh;
     display: grid;
-    place-content: center;
+    /* place-content: center; */
+    overflow: hidden;
+    z-index: 100;
+    place-items: center;
   }
+  .galcontainer {
+       width: 90%;
+       margin: 0 auto;
+       margin-bottom: 20px;
+       padding: 20px;
+       min-height: 100vh;
+       display: grid;
+       place-content: center;
+       overflow: hidden;
+       z-index: 100;
+     }
+     
   
-  .desktop_2 * {
+   .desktop_2 * {
     /* font-family: Nunito, sans-serif; */
     margin-top: 0px;
     margin-right: 0px;
@@ -967,7 +991,8 @@ footer {
     .desktop_2 .overlay-inner {
       max-width: 90%;
     }
-  }
+  
+  } 
     
 
   /* Service timeLine */
@@ -1116,7 +1141,7 @@ footer {
       text-align: center;
       align-items: center;
     }
-    .gallery{
+    .galleryhome{
       padding: 0;
   
       /* justify-content: center; */

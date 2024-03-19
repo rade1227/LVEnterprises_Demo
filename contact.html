@@ -63,14 +63,24 @@
                         <h3> Send your Message</h3>
                         <!-- <form onsubmit="sendEmail();reset(); return false"> -->
                             <form action="https://formsubmit.co/deepalctesting@gmail.com" method="POST">
+                                
+                                <!-- HONEY POT-->
+                                <input type="text" name="_honey" style="display: none;">
+
+                                <!-- DISABLE CAPTCHA-->
+                               <input type="hidden" name="_captcha" value="false">
+
+                               <!-- THANK YOU PAGE-->
+                               <input type="hidden" name="_next" value="https://rade1227.github.io/LVEnterprises_Demo/success.html">
+
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="firstName">First Name</label>
-                                    <input id="FirstName" name="FirstName" style="background: #fff;"type="text" placeholder="First Name" required>
+                                    <input id="FirstName" name="First&nbsp;Name" style="background: #fff;"type="text" placeholder="First Name" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="LastName">Last Name</label>
-                                    <input id="LastName" name="LastName" type="text" placeholder="Last Name" required>
+                                    <input id="LastName" name="Last&nbsp;Name" type="text" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="input-row">
@@ -92,14 +102,15 @@
                                     <label for="Services" >Services</label>
                                     <select id="Services" name="Services">
                                         <!-- <option value="none">Select one</option> -->
-                                        <option value="none">Outdoor</option>
-                                        <option value="none">Indoor</option>
-                                        <option value="none">Maintainance</option>
-                                        <option value="none">Bakery</option>
+                                        <option value="outdoor">Outdoor</option>
+                                        <option value="indoor">Indoor</option>
+                                        <option value="maintainance">Maintainance</option>
+                                        <option value="bakery">Bakery</option>
                                     </select>
                                 </div>
                             </div>
                             <button class="formbtn" name="formbtn" id="formbtn" type="submit"> Submit</button>
+                            
                         </form>
                     </div>
                 </div>
@@ -112,7 +123,7 @@
 
             <div class="footer-left" style="background: var(--text-color);">
         
-              <img src="img/LV_favi.png" alt="" style="background: var(--text-color);" width="150">
+              <img src="img/LV_favi.png" class="footimg" alt="" style="background: var(--text-color);" >
               <h3>LV Enterprises and <br>Landscaping Services</h3>
         
               <p class="footer-links">
