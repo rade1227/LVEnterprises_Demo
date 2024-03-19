@@ -61,36 +61,36 @@
                         </div>
                     <div class="contact-right">
                         <h3> Send your Message</h3>
-                        <form onsubmit="sendEmail();reset(); return false">
-    
+                        <!-- <form onsubmit="sendEmail();reset(); return false"> -->
+                            <form action="https://formsubmit.co/deepalctesting@gmail.com" method="POST">
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="firstName">First Name</label>
-                                    <input id="FirstName" style="background: #fff;"type="text" placeholder="First Name" required>
+                                    <input id="FirstName" name="FirstName" style="background: #fff;"type="text" placeholder="First Name" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="LastName">Last Name</label>
-                                    <input id="LastName" type="text" placeholder="Last Name" required>
+                                    <input id="LastName" name="LastName" type="text" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div  class="input-group">
                                     <label for="City">City</label>
-                                    <input id="City" type="text" placeholder="City" required>
+                                    <input id="City" type="text" name="City" placeholder="City" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="Email">Email</label>
-                                    <input id="Email" type="email" placeholder="Email" required>
+                                    <input id="Email" type="email" name="Email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="input-row">
                                 <div class="input-group">
                                     <label for="Phone">Phone</label>
-                                    <input id="Phone" type="phone" placeholder="Phone" required>
+                                    <input id="Phone" type="phone" name="Phone"placeholder="Phone" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="Services" >Services</label>
-                                    <select id="Services">
+                                    <select id="Services" name="Services">
                                         <!-- <option value="none">Select one</option> -->
                                         <option value="none">Outdoor</option>
                                         <option value="none">Indoor</option>
@@ -99,7 +99,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <button class="formbtn" id="formbtn" type="submit"> Submit</button>
+                            <button class="formbtn" name="formbtn" id="formbtn" type="submit"> Submit</button>
                         </form>
                     </div>
                 </div>
@@ -185,33 +185,6 @@
        
         <script src="app.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            var formbtn = document.getElementById('formbtn')
-            formbtn.addEventListener('click',function(e){
-                e.preventDefault();
-                var fname = document.getElementById('FirstName').value;
-                var lname = document.getElementById('LastName').value;
-                var phone = document.getElementById('Phone').value;
-                var city = document.getElementById('City').value;
-                var email = document.getElementById('Email').value;
-                var service = document.getElementById('Service').value;
-                console.log('hi');
-                var body= 'Firstname: '+fname + '<br/>Lastname: '+lname + '<br/>Phone: '+phone + '<br/>Email: '+email + '<br/>City: '+city + '<br/>Service: '+service;
-            
-             
-            
-                Email.send({
-                Host : "smtp.gmail.com",
-                Username : "test@gmail.com",
-                Password : "password",
-                To : 'test@gmail.com',
-                From : document.getElementByID('Email').value,
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-                        );
-        });
-        </script>
+       
     </body>
 </html>
