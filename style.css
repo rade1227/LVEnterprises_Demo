@@ -13,6 +13,7 @@
     font-family: "Merriweather", serif;
     overflow: visible;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 header
@@ -581,7 +582,7 @@ footer {
   width:30px;
   height: 30px;
   font-size: 40px;
-
+  background:  var(--text-color);
 }
 }
 /* COPYRIGHTS */
@@ -1868,17 +1869,17 @@ p{
 }
 
 
-/* home page gallery */
+/* ******************************DIAMOND GALLERY on INDEXPAGE ********************** */
 
-.gallery {
+/* .gallery {
 
-  --size: 100px;
+  --size: 150px;
   display: grid;
   grid-template-columns: repeat(6, var(--size));
   grid-auto-rows: var(--size);
   margin-bottom: var(--size);
   place-items: start center;
-  gap: 10px;
+  gap: 8px;
   
   &:has(:hover) img:not(:hover),
   &:has(:focus) img:not(:focus){
@@ -1887,7 +1888,7 @@ p{
 
   & img {
     object-fit: cover;
-    width: calc(var(200px) * 2);
+    width: calc(var(--size) * 2);
     height: calc(var(--size) * 2);
     clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
     transition: clip-path 0.25s, filter 0.75s;
@@ -1912,9 +1913,12 @@ p{
   }
 
   @media screen and (max-width: 940px) {
-    display:inline;
+    display:list-item;
     max-width: 50%;
     margin: 0;
     --size:100px;
   }
-}
+} */
+
+/* ******************************DIAMOND GALLERY END*************************************************************** */
+
