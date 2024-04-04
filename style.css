@@ -294,6 +294,25 @@ header p
     padding-top: 30px;
     
 }
+/* Recognition */
+.serviceList1
+{
+    margin: 5em; 
+    /* background-color: #fff; */
+    font-weight: 500;
+    /* background-color: var(--bg-color); */
+}
+
+.image-container1 {
+  width: 85%;
+  height:auto;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 6em;
+}
+
 
 /* Our Service   */
 
@@ -1144,6 +1163,7 @@ footer {
     }
     .galleryhome{
       padding: 0;
+      width: fit-content;
   
       /* justify-content: center; */
     }
@@ -1502,7 +1522,7 @@ footer {
 
 @media only screen and (max-width: 940px) {
     .ourService {
-        width: 100%;
+        width: 80%;
         border-radius: 0;
     }
     column {
@@ -1512,6 +1532,14 @@ footer {
   .image-container
   {
     flex-wrap: wrap;
+    margin-left: 1em;
+
+  }
+  .image-container1
+  {
+    flex-wrap: wrap;
+    margin-left:10px;
+
   }
     .image {
         width: 100%;
